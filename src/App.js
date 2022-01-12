@@ -1,14 +1,18 @@
-
+import './index.css'
 import React from 'react';
+import Card from './component/Card';
 import CountriesComponent from './component/Component';
-import "./index.css"
+
 function App() {
    return (
     <div>
-    
+  
       <h1> " LIST COUNTRIES " </h1>
 
-      <CountriesComponent/>
+          <Card className='container'  />
+        
+      
+
   
     </div>
 
@@ -16,5 +20,6 @@ function App() {
   );
     
 }
+
 
 export default App;
