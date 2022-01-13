@@ -5,11 +5,18 @@ import CountriesComponent from './component/Component';
 
 function App() {
    return (
-    <div>
-  
-      <h1> " LIST COUNTRIES " </h1>
+    <div >
+        <div>
+           <h1> " CARD VIEW COUNTRIES " </h1>
 
-          <Card className='container'  />
+           
+        </div>
+        <div className='container'>
+
+           <Card />
+
+         </div>
+          
         
       
 

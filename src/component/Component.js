@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
 
-const CountriesComponent = () => {
+const CountriesComponent = (name) => {
   const [countriesState, setCountriesState] = useState([])
   useEffect(() => {
     fetch("https://restcountries.com/v2/all")
       .then((response) => response.json())
       .then((countriesArray) => {
-        const newCountriesState = countriesArray.map((countries, index) => {
+        const newCountriesState = countriesArray.map((countries, index, name) => {
           return (
-
+           
            <div key={index}>
                 
            <div>
