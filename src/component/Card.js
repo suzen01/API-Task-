@@ -14,12 +14,11 @@ const Card = () => {
           return (
            <div key={index} >
                 
-           <div  className='cardCountener' >
-            <img src={countries.flag} className='imageClass'
-              />
-             <div className='name'>name: {countries.name}, </div> 
-             <div> capital: {countries.capital} ,</div>  
-             <div> region: {countries.region} ,</div> 
+            <div  className='cardCountener' >
+            <img src={countries.flag} className='imageClass'/>
+            <div className='name'>name: {countries.name}, </div> 
+            <div> capital: {countries.capital} ,</div>  
+            <div> region: {countries.region} ,</div> 
                  population: {countries.population}
         
            </div>
