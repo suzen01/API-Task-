@@ -16,22 +16,23 @@ const Table = () => {
             <div>
          <table className='tableStyle'>
             <thead>
-              <th>
+              <tr>
                <th className='padd'>flag:  </th> 
                <th className='padd'>name:   </th> 
                <th className='padd'>capital:  </th> 
                <th className='padd'>region:</th> 
                <th className='padd'>population:</th> 
-              </th>
+              </tr>
+              
              </thead>
          <tbody>
-            <td>
+            <tr>
               <td className='padd'> <img src={countries.flag} className='imageClassTable'/></td>
               <td className='paddName'> <div className='name'> {countries.name}    </div> </td>
               <td className='padd'> <div  className=''> {countries.capital}   </div></td> 
               <td className='padd'> <div> {countries.region}    </div></td>
               <td className='padd'> <div> {countries.population}   </div> </td>
-            </td>
+            </tr>
           </tbody>
           </table>
           </div>
