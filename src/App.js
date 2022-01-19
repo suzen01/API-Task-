@@ -15,7 +15,18 @@ function App() {
         <div className='container'>
 
          </div>
-         <div> 
+         <div > 
+         <table className='tableHeaderStyle'>
+        <thead>
+          <tr >
+           <th>name   </th> 
+           <th>capital  </th> 
+           <th>region   </th> 
+           <th>population  </th> 
+          </tr>
+         </thead>
+         <tbody></tbody>
+         </table>
             <Table/>
             
          </div>

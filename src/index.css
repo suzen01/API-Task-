@@ -8,17 +8,11 @@ border-radius: 10px 10px 10px 10px;
 box-shadow:3px 9px 17px 6px rgb(206, 196, 196);
 padding:20px;
 text-align: center;
-
 }
 
 #root{
  background-color:white;
- /* border: 1px solid black; */
  margin:200px;
-}
-.name{
-font-family: solid 'Segoe UI', Tahoma;
-padding:5px;
 }
 .cardCountener{
   width:200px;
@@ -44,38 +38,38 @@ height:50%;
 width:100%;
 }
 .tableStyle{
-table-layout: 300px ;
-border-collapse:collapse;
 width:100%;
 flex-direction:column;
+background-color: whitesmoke;
+text-align: left;
 
 }
 .imageClassTable{
-  max-width:100px;
-  max-height:90px;
+  max-width:80px;
+  max-height:80px;
+  border-radius: 20px 20px 20px 20px;
+ }
+td{
+ width:15px;
+  line-height: 2;
+   
+ }
+.tableHeaderStyle{
+  background-color: black;
+  color: white; 
+  /* padding: 5px;   */
+  width:100%;
+  line-height: 2;
+  /* margin: 10px; */
+  text-align:right;
   
-}
-th{
-border: black;
-font-size: 15px;
-text-align: center;
-
-}
-td {
-border:2px rgb(32, 32, 31);
-background-color: whitesmoke;
-text-align: center;
-width:155px;
-font-size: 15px;
-/* padding:1px; */
-
-}
-.padd{
-width:700px;
-padding:2px;
-}
-.paddName{
-text-align: left;
-
-
-}
+ }
+ .name{
+   text-align: left;
+   
+ }
+ .centerClass{
+   text-align: center;
+   width:100%;
+   margin: 30px;
+ }
