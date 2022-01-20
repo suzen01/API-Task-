@@ -9,25 +9,27 @@ function App() {
     <div >
         <div>
            <h1> " VIEW COUNTRIES " </h1>
-
-           
         </div>
         <div className='container'>
 
          </div>
-         <div > 
-         <table className='tableHeaderStyle'>
-        <thead>
-          <tr >
-           <th>name   </th> 
-           <th>capital  </th> 
-           <th>region   </th> 
-           <th>population  </th> 
+         <div> 
+          <table className='tableHeaderStyle'>
+          <thead>
+           <tr >
+          <th>    </th>
+           <th > name  </th> 
+         
+           <th >  capital  </th> 
+           <br/>
+           <th> region   </th> 
+           <br/>
+           <th> population  </th> 
           </tr>
-         </thead>
-         <tbody></tbody>
-         </table>
+          </thead>
+          </table>
             <Table/>
+            
             
          </div>
           
