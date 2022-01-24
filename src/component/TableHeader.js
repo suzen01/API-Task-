@@ -7,26 +7,24 @@ function TableHeader() {
     return (
     <div >
         <div>
-              <h1> " Table VIEW for COUNTRIES " </h1>
+           <h1> " TABLE VIEW FOR COUNTRIES " </h1>
         </div>
-         <div > 
-         <table className='tableHeaderStyle'>
-         <thead>
-                     <tr >
-           <th>    </th>
-           <th > name  </th> 
 
-           <th >  capital  </th> 
-          
-           <th> region   </th> 
-           
-           <th> population  </th> 
+         <div > 
+         <table className=''>
+          <thead  className='tableHeaderStyle'>
+             <tr >
+             <th>           </th>
+             <th>    name   </th> 
+             <th>  capital  </th> 
+             <th>  region   </th> 
+             <th> population</th> 
            </tr>
           </thead>
          <tbody>
          <Table/>
          </tbody>
-          </table>
+         </table>
             
 
          </div>
