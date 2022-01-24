@@ -10,11 +10,10 @@ const Card = () => {
       .then((response) => response.json())
       .then((countriesArray) => {
         const newCountriesState = countriesArray.map((countries, index, name) => {
-         //ghghghhg
-         ///fsjfn
-         ///dnjanjfn
-         
-          return (
+       
+          
+          
+            return (
            <div key={index} >
                
             <div  className='cardCountener' >
