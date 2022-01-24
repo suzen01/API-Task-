@@ -10,13 +10,15 @@ const Card = () => {
       .then((response) => response.json())
       .then((countriesArray) => {
         const newCountriesState = countriesArray.map((countries, index, name) => {
-         // thank you 
-          return (
+       
+          
+          
+            return (
            <div key={index} >
-                
+               
             <div  className='cardCountener' >
             <img src={countries.flag} className='imageClass'/>
-            <div className='name'>name: {countries.name}, </div> 
+            <div> name: {countries.name}, </div> 
             <div> capital: {countries.capital} ,</div>  
             <div> region: {countries.region} ,</div> 
                  population: {countries.population}

@@ -14,12 +14,12 @@ const Table = () => {
             <div key={index} >
             <div>
               <div>
-               <table className='tableStyle'>
+               <table>
                 <thead></thead>
-                <tbody>
+                <tbody className='tableStyle'>
                 <tr>
-                 {<td> <img src={countries.flag} className='imageClassTable'/></td>}
-                 <td> <div className='name'> {countries.name} </div> </td>
+                 <td> <img src={countries.flag} className='imageClassTable'/></td>
+                 <td> <div className='centerClass'> {countries.name} </div> </td>
                  <td> <div className='centerClass'> {countries.capital}   </div></td> 
                  <td> <div className='centerClass'> {countries.region}    </div></td>
                  <td> <div className='centerClass'> {countries.population}   </div> </td>
