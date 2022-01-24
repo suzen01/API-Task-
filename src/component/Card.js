@@ -10,7 +10,7 @@ const Card = () => {
       .then((response) => response.json())
       .then((countriesArray) => {
         const newCountriesState = countriesArray.map((countries, index, name) => {
-         
+         // thank you 
           return (
            <div key={index} >
                 
