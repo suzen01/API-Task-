@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import  "../index.css"
+import  "../index.css";
+import TableHeader from './TableHeader';
 const Table = () => {
 
   const [countriesState, setCountriesState] = useState([])
@@ -12,7 +13,6 @@ const Table = () => {
           return (
             <div key={index} >
             <div>
-           
               <div>
                <table className='tableStyle'>
                 <thead></thead>
@@ -33,7 +33,7 @@ const Table = () => {
             )
         });
         setCountriesState(newCountriesState);
-      })
+       })
       }, []);
     
   return countriesState;

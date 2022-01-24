@@ -2,47 +2,40 @@ import './index.css'
 import React from 'react';
 import Card from './component/Card';
 import CountriesComponent from './component/Component';
-import Table from './component/Table'
+// import Table from './component/Table'
+import { Routes ,Route, Link } from 'react-router-dom';
+import TableHeader from './component/TableHeader';
 
-function App() {
+function ToRoutering (){
+
    return (
-    <div >
-        <div>
-           <h1> " VIEW COUNTRIES " </h1>
+     
+          <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/CountriesComponent">Home</Link>
+              </li>
+              <li>
+                <Link to="/TableHeader">table view</Link>
+              <li>
+                <Link to="/Card">Card view</Link>
+              </li>
+              </li>
+            </ul>
+          </nav>
+          <Routes>
+            <Route path="/TableHeader" element={<TableHeader/>}/>
+                      
+            <Route path="/Card" element={<Card/>}/>
+                        
+            <Route path="/CountriesComponent" element= {<CountriesComponent/>}/>
+            
+            </Routes>
         </div>
-        <div className='container'>
-
-         </div>
-         <div> 
-          <table className='tableHeaderStyle'>
-          <thead>
-           <tr >
-          <th>    </th>
-           <th > name  </th> 
-         
-           <th >  capital  </th> 
-           <br/>
-           <th> region   </th> 
-           <br/>
-           <th> population  </th> 
-          </tr>
-          </thead>
-          </table>
-            <Table/>
-            
-            
-         </div>
-          
-        
-      
-
+   );
+  };
   
-    </div>
 
 
-  );
-    
-}
-
-
-export default App;
+export default ToRoutering;
