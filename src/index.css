@@ -27,15 +27,17 @@ text-align: center;
   
 }
 .container {
-  width: 300px;
-  height: 300px;
+
+  gap: 10px 20px; /* row-gap column gap */
   display: flex ;
   flex-wrap: wrap;
+  order:4;
   object-fit: cover;
-  justify-content:center;
+  /* justify-content:center; */
   gap:10px 20px;
   column-gap:20px;
-  order:4;
+  row-gap: 20px;
+  /* align-content: flex-start; */
 }
 .imageClass{
 height:50%;

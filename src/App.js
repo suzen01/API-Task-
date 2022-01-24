@@ -1,10 +1,10 @@
 import './index.css'
 import React from 'react';
-import Card from './component/Card';
 import CountriesComponent from './component/Component';
 // import Table from './component/Table'
 import { Routes ,Route, Link } from 'react-router-dom';
 import TableHeader from './component/TableHeader';
+import CardStyle from './component/CardStyle';
 
 function ToRoutering (){
 
@@ -19,7 +19,7 @@ function ToRoutering (){
               <li>
                 <Link to="/TableHeader">table view</Link>
               <li>
-                <Link to="/Card">Card view</Link>
+                <Link to="/CardStyle">Card view</Link>
               </li>
               </li>
             </ul>
@@ -27,7 +27,7 @@ function ToRoutering (){
           <Routes>
             <Route path="/TableHeader" element={<TableHeader/>}/>
                       
-            <Route path="/Card" element={<Card/>}/>
+            <Route path="/CardStyle" element={<CardStyle/>}/>
                         
             <Route path="/CountriesComponent" element= {<CountriesComponent/>}/>
             
@@ -36,6 +36,4 @@ function ToRoutering (){
    );
   };
   
-
-
 export default ToRoutering;

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import  "../index.css"
 
-
 const Card = () => {
  
   const [countriesState, setCountriesState] = useState([])
