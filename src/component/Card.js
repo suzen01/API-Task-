@@ -2,16 +2,18 @@ import React, {useEffect, useState} from 'react';
 import  "../index.css"
 
 const Card = () => {
- 
-  const [countriesState, setCountriesState] = useState([])
+   const [countriesState, setCountriesState] = useState([])
   useEffect(() => {
     fetch("https://restcountries.com/v2/all")
       .then((response) => response.json())
       .then((countriesArray) => {
-        const newCountriesState = countriesArray.map((countries, index, name) => {
+        setCountriesState(countriesArray);
+        })
+        }, []);
+        return(
+        countriesState.map((countries, index, name) => {
        
-          
-          
+                  
             return (
            <div key={index} >
                
@@ -28,10 +30,10 @@ const Card = () => {
            //<div className={style.gridContainer}>
 
           )
-        });
-        setCountriesState(newCountriesState);
-      })
-      }, []);
-  return countriesState;
+        })
+        
+      
+      
+        )
     } 
 export default Card;

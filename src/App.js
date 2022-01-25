@@ -1,7 +1,6 @@
 import './index.css'
 import React from 'react';
 import CountriesComponent from './component/Component';
-// import Table from './component/Table'
 import { Routes ,Route, Link } from 'react-router-dom';
 import TableHeader from './component/TableHeader';
 import CardStyle from './component/CardStyle';
@@ -15,6 +14,7 @@ function ToRoutering (){
             <ul>
               <li>
                 <Link to="/CountriesComponent">Home</Link>
+                
               </li>
               <li>
                 <Link to="/TableHeader">table view</Link>

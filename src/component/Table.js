@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import  "../index.css";
 import TableHeader from './TableHeader';
-const Table = () => {
 
+
+
+
+const Table = () => {
   const [countriesState, setCountriesState] = useState([])
   useEffect(() => {
     fetch("https://restcountries.com/v2/all")
